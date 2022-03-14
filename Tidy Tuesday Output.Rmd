@@ -1,0 +1,20 @@
+---
+title: "Tidy Tuesday Figure"
+author: "Dav King"
+date: "3/14/2022"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = F, message = F)
+```
+
+```{r libraries}
+library(tidyverse)
+library(tidytuesdayR)
+```
+
+```{r data}
+tuesdata <- tt_load(2022, week = 10)
+erasmus <- tuesdata$erasmus
+```
